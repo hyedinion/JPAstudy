@@ -15,7 +15,7 @@ jpa study 화이팅
 ## JAVA
 
 ### JPA 구동방식
-persistence 클래스에서 시작
-META-INF/persistence.xml에서 설정정보 조회
-EntityManagerFactory 라는 클래스를 만듦
-필요할 때마다 EntityManager를 찍어내서 돌리면 됨
+persistence 클래스에서 시작<BR>
+META-INF/persistence.xml에서 설정정보 조회<BR>
+EntityManagerFactory 라는 클래스를 만듦<BR>
+필요할 때마다 EntityManager를 찍어내서 돌리면 됨<BR>
