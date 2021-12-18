@@ -13,7 +13,7 @@ public class Order {
     @Column(name = "ORDER_ID")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne //다대1 관계인데 fk가 Order에 있음
     @JoinColumn (name = "MEMBER_ID")
     private Member member;
 
@@ -22,8 +22,12 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order")//orderItem에 order라는 fk가 있음
     private List<OrderItem> orderItems = new ArrayList<>();
+
+    @OneToOne //1대1 관계인데 fk가 ORder에 있음
+    @JoinColumn(name = "DELIVERY_ID")
+    private Delivery delivery;
 
     public void addOrderItem(OrderItem orderItem){//연관관계 편의 메소드
         orderItems.add(orderItem);
