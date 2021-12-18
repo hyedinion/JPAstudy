@@ -19,3 +19,6 @@ persistence 클래스에서 시작<BR>
 META-INF/persistence.xml에서 설정정보 조회<BR>
 EntityManagerFactory 라는 클래스를 만듦<BR>
 필요할 때마다 EntityManager를 찍어내서 돌리면 됨<BR>
+
+## 정리
+https://gold-citron-b93.notion.site/ORM-JPA-5c8c29f8345a49fea3d491628bf0ef5a
